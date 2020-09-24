@@ -35,7 +35,7 @@ var Opts = struct {
 	// Will print deadlock info to log buffer.
 	LogBuf io.Writer
 }{
-	DeadlockTimeout: time.Second * 30,
+	DeadlockTimeout: time.Second * 5,
 	OnPotentialDeadlock: func() {
 		os.Exit(2)
 	},
